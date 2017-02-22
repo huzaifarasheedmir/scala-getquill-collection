@@ -10,3 +10,10 @@ INSERT INTO example.fruits
   (id, fruit_list)
   VALUES ('1',['apple', 'banana']);
 
+Create TABLE example.mix(
+	id text,
+	ls list<text>,
+	mp map<text, text>,
+	lsmp frozen <list<map<text, text>>>,
+	PRIMARY KEY (id)
+);
